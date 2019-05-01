@@ -25,13 +25,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.d(TAG, "onStart MainActivity");
+
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         Log.d(TAG, "onResume MainActivity");
-        // finish();
+//         finish();
 
     }
 

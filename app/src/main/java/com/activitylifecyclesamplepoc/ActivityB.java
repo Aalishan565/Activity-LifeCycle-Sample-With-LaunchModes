@@ -1,8 +1,10 @@
 package com.activitylifecyclesamplepoc;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 
 public class ActivityB extends AppCompatActivity {
     String TAG = "TAG";
@@ -12,6 +14,12 @@ public class ActivityB extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b);
         Log.d(TAG, "onCreate ActivityB");
+    }
+
+    public void onClick(View view) {
+        //  finish();
+        startActivity(new Intent(this, ActivityC.class));
+
     }
 
     @Override
